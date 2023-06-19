@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 379949de07a0cd540b25e83d221edd32, type: 3}
   m_Name: SplashButtons
   m_EditorClassIdentifier: 
-  SceneFolder: Scenes
+  SceneFolder: Jon-Reyn_SplashExample/Scenes
   SceneNames:
   - Name: Scene2
     Image: {fileID: 0}
