@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
 using UnityEngine.SceneManagement;
+using static JonReyn.Tools.EditorTools;
 
 /// <summary>
 /// This script was made by Jonathan Reynolds for Example Purposes. 
@@ -145,25 +146,5 @@ public class SplashButtonsInspector : Editor
 
 
 
-    public void UIArrayHandler(SerializedProperty serArray, int itemIdx)
-    {
-        GUILayout.BeginHorizontal();
-        GUILayout.FlexibleSpace();
-        if (GUILayout.Button("Up", GUILayout.Width(64)))
-        {
-            if (itemIdx > 0)
-                serArray.MoveArrayElement(itemIdx, itemIdx - 1);
-        }
-        if (GUILayout.Button("Down", GUILayout.Width(64)))
-        {
-            if (itemIdx < serArray.arraySize - 1)
-                serArray.MoveArrayElement(itemIdx, itemIdx + 1);
-        }
-        if (GUILayout.Button("Delete", GUILayout.Width(64)))
-        {
-            serArray.DeleteArrayElementAtIndex(itemIdx);
-            return;
-        }
-        GUILayout.EndHorizontal();
-    }
+    
 }
